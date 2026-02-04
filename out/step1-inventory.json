@@ -1,0 +1,83 @@
+{
+  "input_dir": "data",
+  "count": 5,
+  "reports": [
+    {
+      "file": "Banesco_cteMDEzNDAzNDgxODM0ODEwODc0NTc=-MDQyMDI1.pdf",
+      "bank": "banesco",
+      "header_matches": [
+        "DIA REF. CONCEPTO CARGOS ABONOS SALDOS",
+        "DIA REF. CONCEPTO CARGOS ABONOS SALDOS DIA REF. CONCEPTO CARGOS ABONOS SALDOS",
+        "DIA REF. CONCEPTO CARGOS ABONOS SALDOS DIA REF. CONCEPTO CARGOS ABONOS SALDOS"
+      ],
+      "row_match_count": 400,
+      "sample_rows": [
+        "01 09120135964 COMPRAPOSCTA/CTE 148,94 1.395.694,23",
+        "01 09121073595 COMPRAPOSCTA/CTE 802,47 1.394.368,49",
+        "01 02496016428 BanescoPagoMovil 597,23 1.395.315,22",
+        "01 02498069667 BanescoPagoMovil 5.680,00 1.400.995,22",
+        "01 00000000000 PRINCIPALPYMNT :0010310396 55.899,37 1.345.095,85"
+      ]
+    },
+    {
+      "file": "EstadoDeCuenta (13).pdf",
+      "bank": "provincial",
+      "header_matches": [],
+      "row_match_count": 105,
+      "sample_rows": [
+        "02-06-2025 9981 TPBW J0050454179 . TELESERVICIOS 02-06-2025 100,765.00 348,415.22",
+        "02-06-2025 9982 TPBW J0040932805 . TELESERVICIOS 02-06-2025 7,860.00 356,275.22",
+        "02-06-2025 9983 TPBW J0050091348 . TELESERVICIOS 02-06-2025 34,386.00 390,661.22",
+        "02-06-2025 9984 CR.I/REC 0115 J503416319 00741228 02-06-2025 78,873.64 469,534.86",
+        "02-06-2025 9985 CR.I/REC 0157 V005341537 00012095 02-06-2025 6,761.10 476,295.96"
+      ]
+    },
+    {
+      "file": "Movimientos Venezuela.pdf",
+      "bank": "bdv",
+      "header_matches": [
+        "Referencia Descripción Fecha Mov Débito Crédito Saldo",
+        "Referencia Descripción Fecha Mov Débito Crédito Saldo",
+        "Referencia Descripción Fecha Mov Débito Crédito Saldo"
+      ],
+      "row_match_count": 173,
+      "sample_rows": [
+        "9570291070604 COMPRA CON TARJETA DE DEB 01/05/2025 ND -1.839,80 0,00 8.265,55",
+        "9553100006103 COM BANCA MOVIL BDV 01/05/2025 ND -0,50 0,00 8.265,05",
+        "0130100006104 ABONO INTERESES LIQUIDACI 01/05/2025 NC 0,00 41,25 8.306,30",
+        "0677288396589 OPERACION PAGOMOVIL BDV 02/05/2025 NC 0,00 896,00 9.202,30",
+        "6728492861410 TRASPASO OTRAS CTAS BDV E 02/05/2025 ND -7.100,00 0,00 2.102,30"
+      ]
+    },
+    {
+      "file": "persona_bdv_cuenta_0227.pdf",
+      "bank": "bdv",
+      "header_matches": [
+        "Referencia Descripción Fecha Mov Débito Crédito Saldo",
+        "Referencia Descripción Fecha Mov Débito Crédito Saldo",
+        "Referencia Descripción Fecha Mov Débito Crédito Saldo"
+      ],
+      "row_match_count": 1122,
+      "sample_rows": [
+        "0329284931635 PAGO A PROVEEDORES B D V 21/04/2025 NC 0,00 16.971,16 16.971,75",
+        "6728413282040 TRASPASO OTRAS CTAS BDV E 21/04/2025 NC 0,00 670,26 17.642,01",
+        "6728414020170 TRASPASO OTRAS CTAS BDV E 21/04/2025 NC 0,00 7.530,07 25.172,08",
+        "6728415160800 TRASPASO OTRAS CTAS BDV E 21/04/2025 NC 0,00 7.772,14 32.944,22",
+        "6728416538140 TRASPASO OTRAS CTAS BDV E 21/04/2025 NC 0,00 41.172,78 74.117,00"
+      ]
+    },
+    {
+      "file": "provincial dl abril.pdf",
+      "bank": "provincial",
+      "header_matches": [],
+      "row_match_count": 43,
+      "sample_rows": [
+        "02-04-2025 4419 TPBW J0009508722 . TELESERVICIOS 02-04-2025 30,550.26 30,651.63",
+        "02-04-2025 4420 TPBW J0030267318 . TELESERVICIOS 02-04-2025 19,080.24 49,731.87",
+        "04-04-2025 4421 CR.I/REC 0191 J317467485 00144784 04-04-2025 12,424.58 62,156.45",
+        "06-04-2025 4422 TRASP.REYES DANIEL GONZALE. TELESERVICIOS 06-04-2025 62,100.00 56.45",
+        "06-04-2025 4423 COM TRF TERCERO P 20000000. TELESERVICIOS 06-04-2025 0.67 55.78"
+      ]
+    }
+  ]
+}

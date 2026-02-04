@@ -1,0 +1,3 @@
+inventory_input_dir: data
+inventory_output_path: out/step1-inventory.json
+inventory_sample_limit: 5
