@@ -1,5 +1,6 @@
 services:
   bank-transactions:
+    image: bank-transactions:dev
     build:
       context: .
       dockerfile: Dockerfile
@@ -12,6 +13,19 @@ services:
       - ./data:/app/data:ro
       - ./docs:/app/docs
       - ./out:/app/out
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /app/src
+        - action: sync
+          path: ./config
+          target: /app/config
+        - action: sync
+          path: ./docs
+          target: /app/docs
+        - action: rebuild
+          path: ./requirements.txt
     networks:
       - bank_transactions_net
     command:

@@ -8,13 +8,11 @@ RUN groupadd --gid 10001 appuser \
 
 WORKDIR /app
 
-COPY requirements.txt /app/requirements.txt
+COPY --chown=appuser:appuser requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
-COPY src /app/src
-COPY config /app/config
-
-RUN chown -R appuser:appuser /app
+COPY --chown=appuser:appuser src /app/src
+COPY --chown=appuser:appuser config /app/config
 
 ENV PYTHONPATH=/app/src
 
